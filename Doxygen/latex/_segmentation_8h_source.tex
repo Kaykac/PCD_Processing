@@ -1,0 +1,50 @@
+\hypertarget{_segmentation_8h_source}{}\doxysection{Segmentation.\+h}
+\mbox{\hyperlink{_segmentation_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ kaykac\ on\ 29.11.2022.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PCL\_V1\_SEGMENTATION\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PCL\_V1\_SEGMENTATION\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_common_processes_8h}{CommonProcesses.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <pcl/io/pcd\_io.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <pcl/point\_types.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <pcl/visualization/cloud\_viewer.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <pcl/segmentation/extract\_clusters.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <pcl/segmentation/sac\_segmentation.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <pcl/visualization/pcl\_visualizer.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <pcl/sample\_consensus/method\_types.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <pcl/sample\_consensus/model\_types.h>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <pcl/filters/extract\_indices.h>}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_segmentation}{Segmentation}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_common_processes}{CommonProcesses}}\{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_segmentation}{Segmentation}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&fname);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_segmentation_a4413b13037b76677c60fc5cecffff8cb}{labeledPCD}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_segmentation_a85032a43f0bdefd2fcd5df4a30f9baaf}{colorizedPCD}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_segmentation_acec3331feeb055306a3f5030523ad73b}{individual\_savePCD}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_segmentation_aec6b1b0b9d0f18337eccfd1bcee14030}{segmented}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PCL\_V1\_SEGMENTATION\_H}}
+
+\end{DoxyCode}

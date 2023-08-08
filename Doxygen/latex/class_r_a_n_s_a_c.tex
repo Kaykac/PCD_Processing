@@ -1,0 +1,139 @@
+\hypertarget{class_r_a_n_s_a_c}{}\doxysection{RANSAC Class Reference}
+\label{class_r_a_n_s_a_c}\index{RANSAC@{RANSAC}}
+
+
+{\ttfamily \#include $<$RANSAC.\+h$>$}
+
+Inheritance diagram for RANSAC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_r_a_n_s_a_c}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_r_a_n_s_a_c_a0756d1c5b6bf6358026391776b8c91cc}{RANSAC}} (const string \&fname)
+\item 
+void \mbox{\hyperlink{class_r_a_n_s_a_c_a4b6e08614d8ef3caf68844158dd9cbc0}{colorized\+PCD}} ()
+\item 
+void \mbox{\hyperlink{class_r_a_n_s_a_c_a8bdf0253628452cb8bec1bc370c9b418}{individual\+\_\+save\+PCD}} ()
+\item 
+void \mbox{\hyperlink{class_r_a_n_s_a_c_ab531d5b5622a77faaee1ac58248eae0c}{segmented}} (double a)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_segmentation}{Segmentation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_segmentation_acacd4cc341d4fe7a2755b4ae817add94}{Segmentation}} (const string \&fname)
+\item 
+virtual void \mbox{\hyperlink{class_segmentation_a4413b13037b76677c60fc5cecffff8cb}{labeled\+PCD}} ()
+\item 
+virtual void \mbox{\hyperlink{class_segmentation_a85032a43f0bdefd2fcd5df4a30f9baaf}{colorized\+PCD}} ()
+\item 
+virtual void \mbox{\hyperlink{class_segmentation_acec3331feeb055306a3f5030523ad73b}{individual\+\_\+save\+PCD}} ()
+\item 
+virtual void \mbox{\hyperlink{class_segmentation_aec6b1b0b9d0f18337eccfd1bcee14030}{segmented}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_common_processes}{Common\+Processes}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_common_processes_a8bf2569c6d3ef676669b667986a5bc62}{Common\+Processes}} (string fname)
+\item 
+\mbox{\hyperlink{class_common_processes_a95944722f8541592da86045bce5a4f8f}{Common\+Processes}} (string tname, int w, int h)
+\item 
+\mbox{\hyperlink{class_common_processes_aa9b88d7eaf4085e7fac0e400c7994693}{$\sim$\+Common\+Processes}} ()
+\item 
+void \mbox{\hyperlink{class_common_processes_abd60684edfb724a27fd70736a1c2358d}{read\+PCD}} ()
+\item 
+void \mbox{\hyperlink{class_common_processes_a001511ec99b85a216cd33abd4c75a92f}{view\+PCD}} ()
+\item 
+void \mbox{\hyperlink{class_common_processes_ad4198fa8f8e19d359f1f35d58b494097}{scale\+PCD}} (double a)
+\item 
+void \mbox{\hyperlink{class_common_processes_aa0355e854b6ca11b879407f8900986c4}{rotate\+PCD}} (double a)
+\item 
+void \mbox{\hyperlink{class_common_processes_a13d90a84d3041647aaf9a5500e2afc71}{sample\+PCD}} (double a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_common_processes}{Common\+Processes}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_common_processes_add79ed5382234a6c58068446eca93060}{file\+\_\+path}} =\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em string for PCS\textquotesingle{}s path \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_common_processes_a13df2b92bf3afd98b3d772fc8db40ca9}{width}}
+\begin{DoxyCompactList}\small\item\em integer for creating random pcd width. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_common_processes_a833517ec328b9dbae06c007bc20cf47d}{height}}
+\begin{DoxyCompactList}\small\item\em integer for creating random pcd height. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_r_a_n_s_a_c_a0756d1c5b6bf6358026391776b8c91cc}\label{class_r_a_n_s_a_c_a0756d1c5b6bf6358026391776b8c91cc}} 
+\index{RANSAC@{RANSAC}!RANSAC@{RANSAC}}
+\index{RANSAC@{RANSAC}!RANSAC@{RANSAC}}
+\doxysubsubsection{\texorpdfstring{RANSAC()}{RANSAC()}}
+{\footnotesize\ttfamily RANSAC\+::\+RANSAC (\begin{DoxyParamCaption}\item[{const string \&}]{fname }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+This class inherited from class \mbox{\hyperlink{class_segmentation}{Segmentation}} works the same as the constructor function of most base class \mbox{\hyperlink{class_common_processes}{Common\+Processes}}. 
+\begin{DoxyParams}{Parameters}
+{\em fname} & -\/-\/\texorpdfstring{$>$}{>} file path. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_r_a_n_s_a_c_a4b6e08614d8ef3caf68844158dd9cbc0}\label{class_r_a_n_s_a_c_a4b6e08614d8ef3caf68844158dd9cbc0}} 
+\index{RANSAC@{RANSAC}!colorizedPCD@{colorizedPCD}}
+\index{colorizedPCD@{colorizedPCD}!RANSAC@{RANSAC}}
+\doxysubsubsection{\texorpdfstring{colorizedPCD()}{colorizedPCD()}}
+{\footnotesize\ttfamily void RANSAC\+::colorized\+PCD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function colors the pcd parts segmented according to \mbox{\hyperlink{class_r_a_n_s_a_c}{RANSAC}} method and displays it in the viewer (with tolerated value 0.\+01). using SACMODEL\+\_\+\+PLANE for surface segmentatipn
+
+using \mbox{\hyperlink{class_r_a_n_s_a_c}{RANSAC}} method
+
+tolerated value is 0.\+01
+
+random value for R component
+
+random value for G component
+
+random value for B component
+
+Reimplemented from \mbox{\hyperlink{class_segmentation_a85032a43f0bdefd2fcd5df4a30f9baaf}{Segmentation}}.
+
+\mbox{\Hypertarget{class_r_a_n_s_a_c_a8bdf0253628452cb8bec1bc370c9b418}\label{class_r_a_n_s_a_c_a8bdf0253628452cb8bec1bc370c9b418}} 
+\index{RANSAC@{RANSAC}!individual\_savePCD@{individual\_savePCD}}
+\index{individual\_savePCD@{individual\_savePCD}!RANSAC@{RANSAC}}
+\doxysubsubsection{\texorpdfstring{individual\_savePCD()}{individual\_savePCD()}}
+{\footnotesize\ttfamily void RANSAC\+::individual\+\_\+save\+PCD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+This function saves the segmented parts according to the \mbox{\hyperlink{class_r_a_n_s_a_c}{RANSAC}} method one by one to the file. (with tolerated value 0.\+01). using SACMODEL\+\_\+\+PLANE for surface segmentatipn
+
+using \mbox{\hyperlink{class_r_a_n_s_a_c}{RANSAC}} method
+
+tolerated value is 0.\+01
+
+name of saved parth.
+
+Reimplemented from \mbox{\hyperlink{class_segmentation_acec3331feeb055306a3f5030523ad73b}{Segmentation}}.
+
+\mbox{\Hypertarget{class_r_a_n_s_a_c_ab531d5b5622a77faaee1ac58248eae0c}\label{class_r_a_n_s_a_c_ab531d5b5622a77faaee1ac58248eae0c}} 
+\index{RANSAC@{RANSAC}!segmented@{segmented}}
+\index{segmented@{segmented}!RANSAC@{RANSAC}}
+\doxysubsubsection{\texorpdfstring{segmented()}{segmented()}}
+{\footnotesize\ttfamily void RANSAC\+::segmented (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+This function segments pcd with \mbox{\hyperlink{class_r_a_n_s_a_c}{RANSAC}} method. 
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/-\/\texorpdfstring{$>$}{>} tolerated value \\
+\hline
+\end{DoxyParams}
+using SACMODEL\+\_\+\+PLANE for surface segmentatipn
+
+using \mbox{\hyperlink{class_r_a_n_s_a_c}{RANSAC}} method
+
+tolerated value
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_r_a_n_s_a_c_8h}{RANSAC.\+h}}\item 
+\mbox{\hyperlink{_r_a_n_s_a_c_8cpp}{RANSAC.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,49 @@
+\hypertarget{_common_processes_8h_source}{}\doxysection{Common\+Processes.\+h}
+\mbox{\hyperlink{_common_processes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ kaykac\ on\ 29.11.2022.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ PROJECT\_V0\_1\_COMMONPROCESSES\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ PROJECT\_V0\_1\_COMMONPROCESSES\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <pcl/io/pcd\_io.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <pcl/point\_types.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <pcl/visualization/cloud\_viewer.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <pcl/common/common.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <pcl/common/transforms.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <pcl/filters/random\_sample.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{using\ namespace\ }pcl;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_common_processes}{CommonProcesses}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_common_processes}{CommonProcesses}}(\textcolor{keywordtype}{string}\ fname);}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_common_processes}{CommonProcesses}}(\textcolor{keywordtype}{string}\ tname,\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h);}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_common_processes_aa9b88d7eaf4085e7fac0e400c7994693}{\string~CommonProcesses}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_abd60684edfb724a27fd70736a1c2358d}{readPCD}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_a001511ec99b85a216cd33abd4c75a92f}{viewPCD}}();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_ad4198fa8f8e19d359f1f35d58b494097}{scalePCD}}(\textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_aa0355e854b6ca11b879407f8900986c4}{rotatePCD}}\ (\textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_common_processes_a13d90a84d3041647aaf9a5500e2afc71}{samplePCD}}(\textcolor{keywordtype}{double}\ a);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_common_processes_add79ed5382234a6c58068446eca93060}{file\_path}}=\textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_common_processes_a13df2b92bf3afd98b3d772fc8db40ca9}{width}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_common_processes_a833517ec328b9dbae06c007bc20cf47d}{height}};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PROJECT\_V0\_1\_COMMONPROCESSES\_H}}
+
+\end{DoxyCode}

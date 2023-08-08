@@ -1,0 +1,162 @@
+\hypertarget{class_common_processes}{}\doxysection{Common\+Processes Class Reference}
+\label{class_common_processes}\index{CommonProcesses@{CommonProcesses}}
+
+
+{\ttfamily \#include $<$Common\+Processes.\+h$>$}
+
+Inheritance diagram for Common\+Processes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_common_processes}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_common_processes_a8bf2569c6d3ef676669b667986a5bc62}{Common\+Processes}} (string fname)
+\item 
+\mbox{\hyperlink{class_common_processes_a95944722f8541592da86045bce5a4f8f}{Common\+Processes}} (string tname, int w, int h)
+\item 
+\mbox{\hyperlink{class_common_processes_aa9b88d7eaf4085e7fac0e400c7994693}{$\sim$\+Common\+Processes}} ()
+\item 
+void \mbox{\hyperlink{class_common_processes_abd60684edfb724a27fd70736a1c2358d}{read\+PCD}} ()
+\item 
+void \mbox{\hyperlink{class_common_processes_a001511ec99b85a216cd33abd4c75a92f}{view\+PCD}} ()
+\item 
+void \mbox{\hyperlink{class_common_processes_ad4198fa8f8e19d359f1f35d58b494097}{scale\+PCD}} (double a)
+\item 
+void \mbox{\hyperlink{class_common_processes_aa0355e854b6ca11b879407f8900986c4}{rotate\+PCD}} (double a)
+\item 
+void \mbox{\hyperlink{class_common_processes_a13d90a84d3041647aaf9a5500e2afc71}{sample\+PCD}} (double a)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_common_processes_add79ed5382234a6c58068446eca93060}{file\+\_\+path}} =\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em string for PCS\textquotesingle{}s path \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_common_processes_a13df2b92bf3afd98b3d772fc8db40ca9}{width}}
+\begin{DoxyCompactList}\small\item\em integer for creating random pcd width. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_common_processes_a833517ec328b9dbae06c007bc20cf47d}{height}}
+\begin{DoxyCompactList}\small\item\em integer for creating random pcd height. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_common_processes_a8bf2569c6d3ef676669b667986a5bc62}\label{class_common_processes_a8bf2569c6d3ef676669b667986a5bc62}} 
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{CommonProcesses()}{CommonProcesses()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Common\+Processes\+::\+Common\+Processes (\begin{DoxyParamCaption}\item[{string}]{fname }\end{DoxyParamCaption})}
+
+This constructor keeps the file location in a string with
+\begin{DoxyParams}{Parameters}
+{\em fname} & and gives information about whether it can be opened or not. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_processes_a95944722f8541592da86045bce5a4f8f}\label{class_common_processes_a95944722f8541592da86045bce5a4f8f}} 
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{CommonProcesses()}{CommonProcesses()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Common\+Processes\+::\+Common\+Processes (\begin{DoxyParamCaption}\item[{string}]{tname,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+This overloaded constructor is used to generate and save random pcd. It is not so necessary. 
+\begin{DoxyParams}{Parameters}
+{\em tname} & -\/-\/\texorpdfstring{$>$}{>} name of PCD \\
+\hline
+{\em w} & -\/-\/\texorpdfstring{$>$}{>} width of PCD \\
+\hline
+{\em h} & -\/-\/\texorpdfstring{$>$}{>} height of PCD \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_processes_aa9b88d7eaf4085e7fac0e400c7994693}\label{class_common_processes_aa9b88d7eaf4085e7fac0e400c7994693}} 
+\index{CommonProcesses@{CommonProcesses}!````~CommonProcesses@{$\sim$CommonProcesses}}
+\index{````~CommonProcesses@{$\sim$CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{$\sim$CommonProcesses()}{~CommonProcesses()}}
+{\footnotesize\ttfamily Common\+Processes\+::$\sim$\+Common\+Processes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This destructor function is run to destroy the object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_common_processes_abd60684edfb724a27fd70736a1c2358d}\label{class_common_processes_abd60684edfb724a27fd70736a1c2358d}} 
+\index{CommonProcesses@{CommonProcesses}!readPCD@{readPCD}}
+\index{readPCD@{readPCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{readPCD()}{readPCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::read\+PCD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function allows pcd to read values in terminal. \mbox{\Hypertarget{class_common_processes_aa0355e854b6ca11b879407f8900986c4}\label{class_common_processes_aa0355e854b6ca11b879407f8900986c4}} 
+\index{CommonProcesses@{CommonProcesses}!rotatePCD@{rotatePCD}}
+\index{rotatePCD@{rotatePCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{rotatePCD()}{rotatePCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::rotate\+PCD (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & This function makes the rotating of pcd according to this parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_processes_a13d90a84d3041647aaf9a5500e2afc71}\label{class_common_processes_a13d90a84d3041647aaf9a5500e2afc71}} 
+\index{CommonProcesses@{CommonProcesses}!samplePCD@{samplePCD}}
+\index{samplePCD@{samplePCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{samplePCD()}{samplePCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::sample\+PCD (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & This function makes the sampling of pcd according to this parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_processes_ad4198fa8f8e19d359f1f35d58b494097}\label{class_common_processes_ad4198fa8f8e19d359f1f35d58b494097}} 
+\index{CommonProcesses@{CommonProcesses}!scalePCD@{scalePCD}}
+\index{scalePCD@{scalePCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{scalePCD()}{scalePCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::scale\+PCD (\begin{DoxyParamCaption}\item[{double}]{a }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & This function makes the scaling of pcd according to this parameter. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_common_processes_a001511ec99b85a216cd33abd4c75a92f}\label{class_common_processes_a001511ec99b85a216cd33abd4c75a92f}} 
+\index{CommonProcesses@{CommonProcesses}!viewPCD@{viewPCD}}
+\index{viewPCD@{viewPCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{viewPCD()}{viewPCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::view\+PCD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function allows the pcd to be displayed on an extra screen. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_common_processes_add79ed5382234a6c58068446eca93060}\label{class_common_processes_add79ed5382234a6c58068446eca93060}} 
+\index{CommonProcesses@{CommonProcesses}!file\_path@{file\_path}}
+\index{file\_path@{file\_path}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{file\_path}{file\_path}}
+{\footnotesize\ttfamily string Common\+Processes\+::file\+\_\+path =\char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+string for PCS\textquotesingle{}s path 
+
+\mbox{\Hypertarget{class_common_processes_a833517ec328b9dbae06c007bc20cf47d}\label{class_common_processes_a833517ec328b9dbae06c007bc20cf47d}} 
+\index{CommonProcesses@{CommonProcesses}!height@{height}}
+\index{height@{height}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Common\+Processes\+::height\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+integer for creating random pcd height. 
+
+\mbox{\Hypertarget{class_common_processes_a13df2b92bf3afd98b3d772fc8db40ca9}\label{class_common_processes_a13df2b92bf3afd98b3d772fc8db40ca9}} 
+\index{CommonProcesses@{CommonProcesses}!width@{width}}
+\index{width@{width}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Common\+Processes\+::width\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+integer for creating random pcd width. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_common_processes_8h}{Common\+Processes.\+h}}\item 
+\mbox{\hyperlink{_common_processes_8cpp}{Common\+Processes.\+cpp}}\end{DoxyCompactItemize}
